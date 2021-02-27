@@ -25,4 +25,5 @@ print(new_arr)
 #2.呈上題，將 array 中體重(weight)數據集取出算出全部平均體重
 print(np.mean(new_arr['weight']))
 #3.呈上題，進一步算出男生(sex 欄位是 boy)平均體重、女生(sex 欄位是 girl)平均體重
-print(new_arr[new_arr['sex']=='boy']['weight'].mean())
+print('男生: ',new_arr[new_arr['sex']=='boy']['weight'].mean())
+print('女生: ',new_arr[new_arr['sex']=='girl']['weight'].mean())
