@@ -37,3 +37,5 @@ ch_en = np.concatenate([chinese_score,english_score]).reshape(2,6)
 print(np.corrcoef(ch_en))
 ch_ma = np.concatenate([chinese_score,math_score]).reshape(2,6)
 print(np.corrcoef(ch_ma))
+
+print(np.corrcoef(chinese_score,math_score))
