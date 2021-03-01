@@ -20,7 +20,7 @@ score_df = pd.DataFrame([[1,56,66,70],
 #score_df = score_df.set_index('student_id')
 
 #1.6 號學生(student_id=6) 3 科平均分數為何？
-print(score_df.loc[score_df['student_id']==6].mean(axis=1))
+print(score_df.mean(axis=1))
 
 #2.6 號學生 3 科平均分數是否有贏過班上一半的同學？
 print("平均中位數",score_df.mean(axis=1).median())
